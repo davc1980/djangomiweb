@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from models import Tabla
+from .models import Tabla
 
 # Create your views here.
 
