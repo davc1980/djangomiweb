@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from models import Tabla
 
 # Create your views here.
 
@@ -8,4 +9,5 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    tabla = Tabla.objects.all().values()
+    return render(request, 'about.html', {'tabla': tabla})

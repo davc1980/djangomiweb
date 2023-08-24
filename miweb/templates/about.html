@@ -7,6 +7,11 @@
   </head>
   <body>
     <h1>About</h1>
+    {% for x in tabla %}
+    <ul>
+      <li>{{x.nombre}}</li>
+    </ul>
+    {% endfor %}
     <button><a href="/"></a>Home</button>
   </body>
 </html>
