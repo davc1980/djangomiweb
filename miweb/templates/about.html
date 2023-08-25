@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiWeb</title>
-  </head>
-  <body>
-    <h1>About</h1>
-    {% for x in tabla %}
-    <ul>
-      <li>{{x.nombre}}</li>
-    </ul>
-    {% endfor %}
-    <button><a href="/">Home</a></button>
-  </body>
-</html>
+{% extends 'base.html' %} {% block content %}
+<div><h1>About</h1></div>
+{% for x in tabla %}
+<ul>
+  <li>{{x.nombre}}</li>
+</ul>
+{% endfor %}
+<button><a href="/">Home</a></button>
+{% endblock %}
