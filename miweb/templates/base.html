@@ -12,7 +12,16 @@
     />
   </head>
   <body>
-    <h1>Mi Web</h1>
+    <div class="container-fluid bg-gradient">
+      <div class="row">
+        <ul>
+          <a class="btn btn-primary col-1 m-2" role="button" href="/">Home</a>
+          <a class="btn btn-primary col-1 m-2" role="button" href="/about"
+            >About</a
+          >
+        </ul>
+      </div>
+    </div>
 
     {% block content %} {% endblock %}
     <script
